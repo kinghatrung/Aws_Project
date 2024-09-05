@@ -3,7 +3,7 @@
         protected $conn;
         public function __construct()
         {
-            $this -> conn = new mysqli('localhost', 'root', '', 'webdecor');
+            $this -> conn = new mysqli('localhost', 'helloworld', '12345678', 'webdecor');
             if ($this -> conn -> connect_error)
             {
                 die($this -> conn -> connect_error);
